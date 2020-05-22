@@ -1,24 +1,23 @@
 package com.greenaddress.abcore;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends ABCoreBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
-        final Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final String useDistribution = prefs.getString("usedistribution", "core");
-        getSupportActionBar().setSubtitle(getString(R.string.subtitle, useDistribution));
+        setUpTopNavBar();
     }
 
 
