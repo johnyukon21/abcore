@@ -37,9 +37,6 @@ public class ABCoreBaseActivity extends AppCompatActivity {
             case R.id.console:
                 startActivity(new Intent(this, ConsoleActivity.class));
                 return true;
-            case R.id.about:
-                startActivity(new Intent(this, AboutActivity.class));
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

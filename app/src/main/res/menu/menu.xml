@@ -10,6 +10,4 @@
           android:title="Debug Log"/>
     <item android:id="@+id/console"
           android:title="Console"/>
-    <item android:id="@+id/about"
-          android:title="About"/>
 </menu>
