@@ -137,12 +137,10 @@ public class MainActivity extends ABCoreBaseActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Toolbar toolbar = findViewById(R.id.toolbar);
         mTvStatus = findViewById(R.id.textViewStatus);
         mSwitchCore = findViewById(R.id.switchCore);
         mQrCodeText = findViewById(R.id.textViewQr);
         mImageViewQr = findViewById(R.id.qrcodeImageView);
-        setSupportActionBar(toolbar);
 
         setSwitch();
         final View.OnClickListener cliboard = new View.OnClickListener() {
