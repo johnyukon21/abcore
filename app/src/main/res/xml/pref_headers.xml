@@ -1,20 +1,18 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- These settings headers are only used on tablets. -->
-
     <header
         android:fragment="com.greenaddress.abcore.SettingsActivity$CorePreferenceFragment"
         android:icon="@drawable/ic_info_black_24dp"
-        android:title="@string/pref_header_conf" />
+        android:title="@string/pref_header_conf"/>
 
     <header
         android:fragment="com.greenaddress.abcore.SettingsActivity$AndroidPreferenceFragment"
         android:icon="@drawable/ic_info_black_24dp"
-        android:title="@string/pref_header_android" />
+        android:title="@string/pref_header_android"/>
 
     <header
         android:fragment="com.greenaddress.abcore.SettingsActivity$AboutFragment"
         android:icon="@drawable/ic_info_black_24dp"
-        android:title="@string/pref_header_about" />
+        android:title="@string/pref_header_about"/>
 
 </preference-headers>
